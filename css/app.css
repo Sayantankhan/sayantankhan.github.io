@@ -1,0 +1,31 @@
+body, html {
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins';
+  }
+  
+  .row-container {
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    flex-direction: column; 
+    background-color: 050200; 
+    overflow: hidden;
+  }
+  
+  .row-bar {
+    top: 10%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .row-bar-autotype {
+    letter-spacing: 5px;
+    font-size: 500%;
+    color: aliceblue;
+  }
