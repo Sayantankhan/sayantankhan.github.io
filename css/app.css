@@ -16,7 +16,7 @@ body, html {
   }
   
   .row-bar {
-    top: 10%;
+    top: 5%;
     justify-content: center;
     display: flex;
     position: absolute;
