@@ -19,7 +19,7 @@ const Index = () => {
       company: "Oracle",
       location: "Bangalore Urban, Karnataka, India",
       description: "Provision, secure, scale, monitor, and operate the application, network stack for distributed AI workloads across thousands of GPUs. Enabling customers to scale GPU usage without compromising performance and building an ultra-high-performance infrastructure to support AI workloads on OCI.",
-      skills: ["Java", "gRPC", "AI Infrastructure", "GPU Computing", "Distributed Systems"]
+      skills: ["Java", "GO", "gRPC", "Memory Broker", "Multithreading", "AI Infrastructure", "GPU Computing", "Distributed Systems"]
     },
     {
       period: "Sep 2021 - Jul 2024",
@@ -27,7 +27,7 @@ const Index = () => {
       company: "Nike",
       location: "Bengaluru, Karnataka, India",
       description: "Developed and maintained large-scale backend systems supporting Nike's global e-commerce platform and digital infrastructure.",
-      skills: ["Java", "gRPC", "Microservices", "Cloud Computing"]
+      skills: ["Java", "GO", "gRPC", "Rest", "Vue", "Microservices", "Cloud Computing", "AWS"]
     },
     {
       period: "Nov 2019 - Sep 2021",
@@ -43,7 +43,7 @@ const Index = () => {
       company: "Tata Consultancy Services (TCS)",
       location: "Bengaluru Area, India",
       description: "Developed enterprise-grade software solutions using Java technologies, RESTful web services, and modern backend frameworks.",
-      skills: ["Java", "RESTful WebServices", "Enterprise Applications", "Backend Development"]
+      skills: ["Java", "React", "RESTful WebServices", "Enterprise Applications", "Backend Development"]
     }
   ];
 
@@ -70,7 +70,7 @@ const Index = () => {
       language: "Java",
       stars: 2,
       forks: 0,
-      topics: ["ha", "Pacemaker", "Corosync", "DRBD", "distributed-systems"],
+      topics: ["HA", "Pacemaker", "Corosync", "DRBD", "distributed-systems"],
       status: "active"
     },
     {
@@ -90,7 +90,7 @@ const Index = () => {
       language: "Java",
       stars: 3,
       forks: 0,
-      topics: ["Socket", "linux", "tcp", "algorithms"],
+      topics: ["Socket", "linux", "tcp", "algorithms", "nccl"],
       status: "active"
     },
     {
