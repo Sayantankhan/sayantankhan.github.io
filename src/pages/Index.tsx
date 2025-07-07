@@ -2,14 +2,51 @@ import { Github, Linkedin, ExternalLink, Mail, MapPin, Calendar, Code, Server, C
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
 
 const Index = () => {
   const skills = [
-    { name: "Backend Development", icon: Server, description: "Scalable server-side applications" },
-    { name: "Infrastructure", icon: Cloud, description: "Cloud architecture & deployment" },
-    { name: "DevOps", icon: Code, description: "CI/CD & automation pipelines" },
-    { name: "HPC", icon: Cpu, description: "High-performance computing" },
-    { name: "AI/ML", icon: Brain, description: "Artificial intelligence solutions" }
+    { 
+      name: "Backend Development", 
+      icon: Server, 
+      description: "Scalable server-side applications",
+      proficiency: 95,
+      experience: "8+ years",
+      technologies: [
+        "Java", "Go", "Node.js", "Spring Boot", "Express", "Gin", 
+        "gRPC", "RESTful APIs", "Microservices", "MySQL", "Cassandra", 
+        "DynamoDB", "PostgreSQL", "PostGIS", "Elasticsearch", "Kibana", 
+        "Zookeeper", "Kafka", "AMQ"
+      ],
+      highlight: "Built scalable systems, capable of handling millions of requests"
+    },
+    { 
+      name: "Infrastructure", 
+      icon: Cloud, 
+      description: "Cloud architecture & deployment",
+      proficiency: 90,
+      experience: "5+ years",
+      technologies: ["OCI", "AWS", "GCP", "Docker", "Kubernetes", "Terraform", "IaC", "Jenkins", "GitHub Actions", "Ansible", "Monitoring", "HA / Failover Setup"],
+      highlight: "End-To-End automation and deployment of large-scale cloud infrastructure across OCI, AWS, and GCP, supporting hundreds of production workloads with high availability and observability"
+    },
+    { 
+      name: "HPC", 
+      icon: Cpu, 
+      description: "High-performance computing",
+      proficiency: 80,
+      experience: "2+ years",
+      technologies: ["GPU Computing", "MPI", "NCCL/RCCL", "CUDA", "Performance Tuning", "Failover Handling", "DAOS", "Memory Brokers", "RoCE", "InfiniBand"],
+      highlight: "Scaled and managed 10K+ GPU nodes. Implemented custom memory brokers. Designed topology-aware NCCL tuner for optimal bandwidth and performance"
+    },
+    { 
+      name: "AI/ML", 
+      icon: Brain, 
+      description: "Artificial intelligence solutions",
+      proficiency: 80,
+      experience: "2+ years",
+      technologies: ["ML Infrastructure", "Regression & Classification Models", "Nemo Framework", "PyTorch", "GPU Optimization", "AI Workloads"],
+      highlight: "AI Model Deployment and Performace Tuning"
+    }
   ];
 
   const experience = [
@@ -153,15 +190,42 @@ const Index = () => {
       <section className="px-6 py-20 lg:px-8 bg-slate-800/50">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-white mb-16">Core Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {skills.map((skill, index) => (
-              <Card key={skill.name} className="bg-slate-700/50 border-slate-600 hover:bg-slate-700/70 transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardHeader className="text-center">
-                  <skill.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-                  <CardTitle className="text-white">{skill.name}</CardTitle>
+              <Card key={skill.name} className="bg-slate-700/50 border-slate-600 hover:bg-slate-700/70 transition-all duration-300 hover:scale-105 animate-fade-in group" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 bg-blue-500/20 rounded-lg">
+                      <skill.icon className="h-8 w-8 text-blue-400" />
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="text-white text-xl mb-1">{skill.name}</CardTitle>
+                      <div className="flex items-center gap-2">
+                        <Badge variant="secondary" className="text-xs">
+                          {skill.experience}
+                        </Badge>
+                        <span className="text-sm text-slate-400">{skill.proficiency}% Proficiency</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Progress value={skill.proficiency} className="h-2 mb-4" />
                 </CardHeader>
-                <CardContent>
-                  <p className="text-slate-300 text-center">{skill.description}</p>
+                <CardContent className="pt-0">
+                  <p className="text-slate-300 mb-4">{skill.description}</p>
+                  <div className="mb-4">
+                    <p className="text-sm text-blue-400 font-medium mb-2">Key Achievement:</p>
+                    <p className="text-sm text-slate-300">{skill.highlight}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-400 mb-2">Technologies:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {skill.technologies.map((tech) => (
+                        <Badge key={tech} variant="outline" className="border-slate-500 text-slate-300 text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
