@@ -25,7 +25,7 @@ const Index = () => {
       icon: Cloud, 
       description: "Cloud architecture & deployment",
       proficiency: 90,
-      experience: "5+ years",
+      experience: "8+ years",
       technologies: ["OCI", "AWS", "GCP", "Docker", "Kubernetes", "Terraform", "IaC", "Jenkins", "GitHub Actions", "Ansible", "Monitoring", "HA / Failover Setup"],
       highlight: "End-To-End automation and deployment of large-scale cloud infrastructure across OCI, AWS, and GCP, supporting hundreds of production workloads with high availability and observability"
     },
@@ -34,7 +34,7 @@ const Index = () => {
       icon: Cpu, 
       description: "High-performance computing",
       proficiency: 80,
-      experience: "2+ years",
+      experience: "3+ years",
       technologies: ["GPU Computing", "MPI", "NCCL/RCCL", "CUDA", "Performance Tuning", "Failover Handling", "DAOS", "Memory Brokers", "RoCE", "InfiniBand"],
       highlight: "Scaled and managed 10K+ GPU nodes. Implemented custom memory brokers. Designed topology-aware NCCL tuner for optimal bandwidth and performance"
     },
@@ -43,7 +43,7 @@ const Index = () => {
       icon: Brain, 
       description: "Artificial intelligence solutions",
       proficiency: 80,
-      experience: "2+ years",
+      experience: "3+ years",
       technologies: ["ML Infrastructure", "Regression & Classification Models", "Nemo Framework", "PyTorch", "GPU Optimization", "AI Workloads"],
       highlight: "AI Model Deployment and Performace Tuning"
     }
