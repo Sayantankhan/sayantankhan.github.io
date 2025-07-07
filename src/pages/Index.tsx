@@ -15,7 +15,7 @@ const Index = () => {
       technologies: [
         "Java", "Go", "Node.js", "Spring Boot", "Express", "Gin", 
         "gRPC", "RESTful APIs", "Microservices", "MySQL", "Cassandra", 
-        "DynamoDB", "PostgreSQL", "PostGIS", "Elasticsearch", "Kibana", 
+        "DynamoDB", "PostgreSQL", "PostGIS", "Elasticsearch", "Kibana", "Redis", 
         "Zookeeper", "Kafka", "AMQ"
       ],
       highlight: "Built scalable systems, capable of handling millions of requests"
