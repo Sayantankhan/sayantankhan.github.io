@@ -144,10 +144,10 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 ">
       <AnimatedBackground />
       {/* Hero Section */}
-      <section className="relative px-6 py-20 lg:px-8">
+      <section className="relative px-6 py-20 lg:px-8 backdrop-blur-sm">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl font-bold tracking-tight text-white sm:text-7xl mb-6">
@@ -172,16 +172,16 @@ const Index = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
-            <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800">
-              <a href="https://sayantankhan.github.io/blog/" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-5 w-5" />
-                Blog
-              </a>
-            </Button>
             <Button asChild size="lg" className="bg-blue-700 hover:bg-blue-800">
               <a href="https://www.linkedin.com/in/sayantan-khan-219231b7/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800">
+              <a href="https://sayantankhan.github.io/blog/" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Blog
               </a>
             </Button>
           </div>
@@ -397,16 +397,16 @@ const Index = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-6">
-            <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              <a href="https://github.com/Sayantankhan" target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-5 w-5" />
-                GitHub
-              </a>
-            </Button>
             <Button asChild size="lg" className="bg-gradient-to-r from-blue-700 to-blue-600 hover:from-blue-800 hover:to-blue-700">
               <a href="https://www.linkedin.com/in/sayantan-khan-219231b7/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              <a href="https://github.com/Sayantankhan" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
               </a>
             </Button>
             <Button asChild size="lg" className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800">
