@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 const Index = () => {
   const skills = [
@@ -144,6 +145,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <AnimatedBackground />
       {/* Hero Section */}
       <section className="relative px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -187,12 +189,12 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="px-6 py-20 lg:px-8 bg-slate-800/50">
+      <section className="relative px-6 py-20 lg:px-8 bg-slate-800/20 backdrop-blur-sm z-10">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-white mb-16">Core Expertise</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {skills.map((skill, index) => (
-              <Card key={skill.name} className="bg-slate-700/50 border-slate-600 hover:bg-slate-700/70 transition-all duration-300 hover:scale-105 animate-fade-in group" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={skill.name} className="bg-slate-700/40 border-slate-600/50 hover:bg-slate-700/60 transition-all duration-300 hover:scale-105 animate-fade-in group backdrop-blur-sm" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="p-3 bg-blue-500/20 rounded-lg">
@@ -234,7 +236,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="px-6 py-20 lg:px-8">
+      <section className="px-6 py-20 lg:px-8 backdrop-blur-sm">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold text-center text-white mb-16">Professional Journey</h2>
           <div className="space-y-8">
@@ -271,7 +273,7 @@ const Index = () => {
       </section>
 
       {/* GitHub Projects Section */}
-      <section className="px-6 py-20 lg:px-8 bg-slate-800/50">
+      <section className="px-6 py-20 lg:px-8 bg-slate-800/50 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-white mb-16">GitHub Projects</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -350,7 +352,7 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="px-6 py-20 lg:px-8 bg-slate-800/50">
+      <section className="px-6 py-20 lg:px-8 bg-slate-800/50 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center text-white mb-16">Featured Work</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -386,7 +388,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="px-6 py-20 lg:px-8">
+      <section className="px-6 py-20 lg:px-8 backdrop-blur-sm">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white mb-8">Let's Connect</h2>
           <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
@@ -418,7 +420,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 py-8 lg:px-8 border-t border-slate-700">
+      <footer className="px-6 py-8 lg:px-8 border-t border-slate-700 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl text-center">
           <p className="text-slate-400">
             © {new Date().getFullYear()} Sayantan Khan. Built with passion for great software.
