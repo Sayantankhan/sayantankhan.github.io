@@ -102,13 +102,13 @@ const Index = () => {
 
   const githubProjects = [
     {
-      name: "High Availability with Pacemaker - Corosync",
-      description: "A high-availability (HA) cluster using Pacemaker, Corosync and DRBD across multiple Docker containers.",
-      url: "https://github.com/Sayantankhan/HA-Setup",
-      language: "Java",
+      name: "CRAQ-Based Distributed Chunk Storage System",
+      description: "A distributed file storage system with FUSE support using the CRAQ protocol, optimized for reliable and versioned chunked file storage for HPC workload",
+      url: "https://github.com/Sayantankhan/craq-cluster",
+      language: "GO",
       stars: 2,
       forks: 0,
-      topics: ["HA", "Pacemaker", "Corosync", "DRBD", "distributed-systems"],
+      topics: ["CRAQ", "FS", "Fuse", "Chunk Storage System", "distributed-systems"],
       status: "active"
     },
     {
@@ -125,7 +125,7 @@ const Index = () => {
       name: "Socket Takeover",
       description: "A mechanism that allows a new instance of an application to inherit an existing network socket from a previous instance.",
       url: "https://github.com/Sayantankhan/socket-takeover",
-      language: "Java",
+      language: "GO",
       stars: 3,
       forks: 0,
       topics: ["Socket", "linux", "tcp", "algorithms", "nccl"],
@@ -135,7 +135,7 @@ const Index = () => {
       name: "Epoll WebSocket Server",
       description: "A high-performance WebSocket server built in Go, leveraging Linux's epoll for efficient handling of multiple simultaneous connections. Mimicking game server communication for scalable and responsive multiplayer interactions.",
       url: "https://github.com/Sayantankhan/epoll-ws-server",
-      language: "Shell",
+      language: "GO",
       stars: 5,
       forks: 0,
       topics: ["devops", "WebSocket", "Epoll", "infrastructure"],
