@@ -108,7 +108,7 @@ const Index = () => {
       language: "GO",
       stars: 2,
       forks: 0,
-      topics: ["CRAQ", "FS", "Fuse", "Chunk Storage System", "distributed-systems"],
+      topics: ["CRAQ", "FS", "Fuse", "gRPC Streaming", "Chunk Storage System", "distributed-systems"],
       status: "active"
     },
     {
@@ -128,7 +128,7 @@ const Index = () => {
       language: "GO",
       stars: 3,
       forks: 0,
-      topics: ["Socket", "linux", "tcp", "algorithms", "nccl"],
+      topics: ["Socket", "linux", "Epoll", "tcp", "algorithms"],
       status: "active"
     },
     {
