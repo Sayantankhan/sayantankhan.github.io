@@ -115,7 +115,7 @@ const Index = () => {
       name: "NCCL Performance Tuner",
       description: "A profiling and tuning toolkit to benchmark and optimize NCCL communication performance across different topologies and configurations on GPU clusters.",
       url: "https://github.com/Sayantankhan/nccl-performance-tuner",
-      language: "Python",
+      language: "C++",
       stars: 4,
       forks: 0,
       topics: ["nccl", "gpu", "performance", "benchmark", "tuning", "distributed-systems"],
