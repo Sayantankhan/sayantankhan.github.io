@@ -14,7 +14,7 @@ const Index = () => {
       proficiency: 95,
       experience: "8+ years",
       technologies: [
-        "Java", "Go", "Node.js", "Spring Boot", "Express", "Gin", 
+        "Java", "Go", "C++", "WIL/COM", "Node.js", "Spring Boot", "Express", "Gin", 
         "gRPC", "RESTful APIs", "Microservices", "MySQL", "Cassandra", 
         "DynamoDB", "PostgreSQL", "PostGIS", "Elasticsearch", "Kibana", "Redis", 
         "Zookeeper", "Kafka", "AMQ"
@@ -27,7 +27,7 @@ const Index = () => {
       description: "Cloud architecture & deployment",
       proficiency: 90,
       experience: "8+ years",
-      technologies: ["OCI", "AWS", "GCP", "Docker", "Kubernetes", "Terraform", "IaC", "Jenkins", "GitHub Actions", "Ansible", "Monitoring", "HA / Failover Setup"],
+      technologies: ["OCI", "AWS", "GCP", "Azure", "Docker", "Kubernetes", "Terraform", "IaC", "Jenkins", "GitHub Actions", "Ansible", "Monitoring", "HA / Failover Setup"],
       highlight: "End-To-End automation and deployment of large-scale cloud infrastructure across OCI, AWS, and GCP, supporting hundreds of production workloads with high availability and observability"
     },
     { 
@@ -52,7 +52,15 @@ const Index = () => {
 
   const experience = [
     {
-      period: "Jul 2024 - Present",
+      period: "Sept 2025 - Present",
+      title: "Senior Software Engineer",
+      company: "Microsoft",
+      location: "Bangalore Urban, Karnataka, India",
+      description: "Designing and optimizing core components of Azure Storage, focusing on performance, reliability, and scalability across distributed systems serving petabytes of data. Working on the storage stack that powers Azure Blob, File, and Data Lake services—enhancing data replication, consistency models, and failover mechanisms. Collaborating with cross-functional teams to build high-availability storage services for AI, cloud-native, and enterprise workloads.",
+      skills: ["C++", "WIL/COM", "GO", "gRPC", "Multithreading", "Distributed Systems", "Storage Systems", "Concurrency", "Low-latency IO"]
+    },
+    {
+      period: "Jul 2024 - Sept 2025",
       title: "Senior Member of Technical Staff",
       company: "Oracle",
       location: "Bangalore Urban, Karnataka, India",
